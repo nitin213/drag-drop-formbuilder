@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frame for drag and drop box</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link  href="drag-box.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link  href="drop-box.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="DragandDrop.js"> </script>
+</head>
+<body>
+<form>
+<div class="container-fluid">
+    <div class="row clearfix">
+        <div class="col-md-6">
+            <h3>
+                Drag box
+            </h3>
+            <hr/>
+            <div  class=dragbox id="drag-box">
+            <div class="well well-sm" id="Email"  draggable="true">
+                <div class="form-group">
+                    <label for="Email" >E-mail</label>
+                    <input type="text" class="form-control input-sm" id="E-mail" name="E-mail" value="eg:abc@gmail.com" style="background-color: white">
+                </div>
+            </div>
+
+            <div class="well well-sm" id="username"  draggable="true">
+                <div class="form-group">
+                    <label for="User-Name" >UserName:</label>
+                    <input type="text" class="form-control input-sm" id="User-Name" name="User-Name" value="abc123def" style="background-color: white">
+                </div>
+            </div>
+
+            <div class="well well-sm" id="password"  draggable="true">
+                <div class="form-group">
+                    <label for="password" >Password:</label>
+                    <input type="password" class="form-control input-sm" id="pwd" name="password" value="password" style="background-color: white">
+                </div>
+            </div>
+
+            <div class="well well-sm" id="firstname"  draggable="true">
+                <div class="form-group">
+                    <label for="firstname" >First Name:</label>
+                    <input type="text" class="form-control input-sm" id="First-Name" name="First-Name" value="nitin" style="background-color: white">
+                </div>
+            </div>
+
+            <div class="well well-sm" id="lastname"  draggable="true">
+                <div class="form-group">
+                    <label for="lastname" >Last Name:</label>
+                    <input type="text" class="form-control input-sm" id="Last-Name" name="Last-Name" value="chakravarthy" style="background-color: white">
+                </div>
+            </div>
+
+            <div class="well well-sm" id="age"  draggable="true">
+                <div class="form-group">
+                    <label for="age" >Age:</label>
+                    <input type="text" class="form-control input-sm" id="years" name="age" value="21" style="background-color: white">
+                </div>
+            </div>
+
+            <div class="well well-sm" id="gender"  draggable="true">
+                <div class="form-group">
+                    Gender:
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio">Male
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio">Female
+                    </label>
+                </div>
+            </div>
+
+            <div class="well well-sm" id="degree"  draggable="true">
+                <div class="form-group">
+                    <label for="Degree">Degree</label>
+                    <select class="form-control input-sm" id="dgre">
+                        <option>B.E</option>
+                        <option>B.Tech</option>
+                        <option>B.Pharma</option>
+                        <option>M.E</option>
+                        <option>M.Tech</option>
+                        <option>M.Pharma</option>
+                        <option>M.Sc</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="well well-sm" id="field"  draggable="true">
+                <div class="form-group">
+                    <label for="field">Field of study</label>
+                    <select class="form-control input-sm" id="studyfield">
+                        <option>Computer Science</option>
+                        <option>Electrical and Electronics</option>
+                        <option>Instrumentation</option>
+                        <option>Mechanical</option>
+                        <option>civil</option>
+                        <option>chemical</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="well well-sm" id="university"  draggable="true">
+                <div class="form-group">
+                    <label for="university" >university:</label>
+                    <input type="text" class="form-control input-sm" id="college" name="university" value="BITS-pilani,pilani campus" style="background-color: white">
+                </div>
+            </div>
+
+            <div class="well well-sm" id="description"  draggable="true">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="description" >Describe yourselves in few words:</label><br/>
+                        <input type="textbox" class="form-control input-sm" id="about" name="description" style="background-color: white" width="100%" width="50px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="well well-sm" id="rememberme"  draggable="true">
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-md-6 drop-box" id="drop-box">
+            <h3>
+                Drop box
+            </h3>
+            <hr/>
+
+        </div>
+
+    </div>
+</div>
+
+</form>
+</body>
+</html>
